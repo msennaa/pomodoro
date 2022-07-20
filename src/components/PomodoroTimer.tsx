@@ -1,13 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { useInterval } from '../hooks/use-interval';
-import { secondsToMinutes } from '../utils/secondsToMinutes'
 import { secondsToTimes } from '../utils/secondsToTime';
 import Button from './Button';
 import Timer from './Timer';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const bellStart = require('../sounds/bell-start.mp3');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const bellFinish = require('../sounds/bell-finish.mp3');
 
 const audioStartWorking = new Audio(bellStart);
